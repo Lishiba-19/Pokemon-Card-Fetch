@@ -1,0 +1,149 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.pokemonForm {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokemonForm input{
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    margin-right:10px ;
+    color: hsl(0, 0%, 0%, 0.75);
+    outline: none;
+    border-radius:10px ;
+}
+
+.pokemonForm button{
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    border-radius:10px ;
+    background-color: hsla(17, 88%, 40%, 0.65);
+    cursor: pointer;
+}
+
+.pokemonForm button:hover{
+    background-color: hsla(17, 88%, 30%, 0.65);
+}
+
+.card {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, hsl(28, 100%, 93%), hsl(23, 100%, 53%), hsl(16, 100%, 36%));
+    background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.p-name{
+    margin: auto;
+    color: hsla(216, 90%, 34%, 0.842);
+}
+.hp{
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(0, 100%, 50%, 0.7);
+}
+
+.pokeImg{
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    border: 9px solid hsl(51, 100%, 50%, 0.76);
+    background: linear-gradient(135deg, hsl(261, 59%, 81%), hsl(261, 59%, 41%), hsl(261, 59%, 21%));
+    animation: gradient-animation 5s ease infinite;
+    border-radius: 4px;
+    padding: 3rem;
+}
+
+img{
+    height: 250px;
+    width: 300px;
+    margin: auto;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+/* Linear Gradient Background: The background property uses a linear gradient transitioning through multiple colors (e.g., yellow to orange to red), which gives a vibrant background.
+Gradient Animation: The @keyframes animation changes the background-position to create a "moving gradient" effect, which adds dynamism.
+Basic Card Structure: The .pokemon-card div contains elements like the Pokémon name, image, and type. You can adjust or add more styles to these elements as needed. */
+
+.type-desc{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: hsl(51, 100%, 50%, 0.76);
+    align-items: center;
+    justify-content: center;
+}
+
+.type-desc p{
+    margin: 10px;
+    font-weight: bold;
+    color: hsla(0, 0%, 13%, 0.877);
+}
+
+.main{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: hsla(204, 93%, 24%, 0.877);
+}
+
+.error-display{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(51, 100%, 50%, 0.76);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.hints {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hints h3, .hints select{
+    margin: 10px;
+}
+
+.hint {
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 6px;
+}
